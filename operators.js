@@ -11,7 +11,7 @@ console.log("Decrement:", --b);       // 2 (Pre-decrement)
 
 // Assignment Operators
 let x = 5;
-x += 3;  console.log("x += 3:", x);  // 8
+x += 3;  console.log("x += 3:", x);  // *
 x -= 2;  console.log("x -= 2:", x);  // 6
 x *= 2;  console.log("x *= 2:", x);  // 12
 x /= 3;  console.log("x /= 3:", x);  // 4
