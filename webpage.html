@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Controls</title>
+</head>
+<body>
+  <h2>Background Audio</h2>
+  <audio id="bgAudio" src="background.mp3" loop></audio>
+  
+  <button onclick="playAudio()">Play</button>
+  <button onclick="pauseAudio()">Pause</button>
+  <input type="range" min="0" max="1" step="0.1" onchange="adjustVolume(this.value)" value="1">
+
+  <script>
+    const audio = document.getElementById('bgAudio');
+
+    function playAudio() {
+      audio.play();
+    }
+
+    function pauseAudio() {
+      audio.pause();
+    }
+
+    function adjustVolume(value) {
+      audio.volume = value;
+    }
+  </script>
+</body>
+</html>
