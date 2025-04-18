@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="newstyle.css">
 </head>
 <body>
   <header>
@@ -33,6 +33,12 @@
     </form>
   </section>
 
-  <script src="script.js"></script>
+  <script src="script.js">
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert("Form submitted successfully!");
+});
+
+  </script>
 </body>
 </html>
